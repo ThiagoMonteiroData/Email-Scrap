@@ -13,7 +13,7 @@ outlook = win32.Dispatch("outlook.application")
 email = outlook.CreateItem(0)
 
 
-email.to = "thiago.tenorio@edu.pe.senac.br"
+email.to = ""
 email.Subject = "Dados do Scraping"
 email.HTMLBody = f"""
 <p>Eu quero passar</p>
@@ -26,3 +26,4 @@ email.HTMLBody = f"""
 
 email.Send()
 print("Email Enviado")
+
